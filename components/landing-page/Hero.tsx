@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
 
           <div
             className=" m-auto relative 
-          lg:py-[1.5rem] sm:py-[1rem]  hidden lg:block md:block
+          lg:py-[1.5rem] sm:py-[1rem]  hidden sm:block 
           top-[8rem] sm:top-[2rem] md:top-[5rem]
            border-yellow-500"
           >
@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
           <div
             className="m-auto  
              relative 
-             top-[4.5rem]
+             top-[4rem]
               mobilehero"
           >
             <Mobilehero />

@@ -89,31 +89,34 @@ body {
  }
 
 
- @media screen and (min-width: 768px) {
+ @media screen and (min-width: 640px) {
      .mobilehero{
        display: none;
      }
+     
 }
 
 @media screen and (min-width:500px) {
    .mobilehero{
         width: 90%;
          margin: auto;
-         margin-top: 40px;
      }
      .sikka{
-      width: 60%;
       height: 100px;
-      /* margin-top: -20px; */
-      padding: 10px;
+      margin-top: 15px;
      }
      .heroparagrapgh{
-      margin-top: 20px;
+      font-size: 1rem;
      }
-     .herofont{
-       padding: 10px;
-      font-size: 2rem;
+     .herosign{
+       padding: 10px 15px 10px 15px;
+       font-size: 1rem;
      }
+     .herologin{
+       padding: 7px 15px 7px 15px;
+       font-size: 1rem;
+     }
+
 }
 
 
