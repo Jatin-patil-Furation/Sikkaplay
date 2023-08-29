@@ -4,13 +4,20 @@ import Navbar from "./Navbar";
 import Mobilenav from "./Mobilenav";
 import HeroCard from "./Herocard/HeroCard";
 import Mobilehero from "./Herocard/Mobilehero";
+import Image from "next/image";
+import herobackground from "../../public/assets/hero/hero-background.svg"
 
 const Hero: React.FC = () => {
   return (
     <section>
-      <div className="w-[100%] relative">
-        <div className="z-0 w-full bg-[#0C0C0C]  object-fill">
-          <img src="/assets/hero/hero-background.svg" alt="" className="z-10" />
+      <div className="w-[100%]  relative  ">
+        <div className="z-0 w-full  border-yellow-600 bg-[#0C0C0C]  object-fill">
+          <Image
+            // src="/assets/hero/hero-background.svg"
+            src={herobackground}
+            alt="hero-background"
+            className="z-10  "
+          />
         </div>
         <div className="z-10  border-green-600 absolute inset-0 text-6xl text-white ">
           <div
@@ -28,7 +35,8 @@ const Hero: React.FC = () => {
           fixed z-20 border-red-500 
           bg-[url('/assets/hero/Navboxshadow.svg')]
            py-[.7rem]  px-[1rem]   sm:block lg:hidden md:hidden
-          ">
+          "
+          >
             <Mobilenav />
           </div>
 
@@ -44,10 +52,8 @@ const Hero: React.FC = () => {
           <div
             className="m-auto  
              relative 
-             md:top-[8rem]
-             top-[6rem]
-              mobilehero 
-              "
+             top-[4.5rem]
+              mobilehero"
           >
             <Mobilehero />
           </div>
